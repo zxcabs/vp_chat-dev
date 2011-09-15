@@ -1,0 +1,6 @@
+[submodule "public/chat"]
+	path = public/chat
+	url = git@github.com:zxcabs/vp_chat.git
+[submodule "public/js/js-injector"]
+	path = public/js/js-injector
+	url = git@github.com:zxcabs/js-injector.git

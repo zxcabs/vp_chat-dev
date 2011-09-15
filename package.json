@@ -1,0 +1,10 @@
+{ "name": "vp_chat-dev"
+  , "description": "chat for vodportal.ru, dev repo"
+  , "author": "Reznichenko Evgeny"
+  , "version": "0.0.1"
+  , "repository" : "git@github.com:zxcabs/vp_chat-dev.git"
+  , "engines" : [ "node >=0.4" ]
+  , "dependencies": {
+	"connect": "1"
+  }
+}

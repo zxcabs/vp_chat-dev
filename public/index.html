@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>chat.vodportal.ru</title>
+	<script type='text/javascript' src='js/js-injector/injector.js'></script>
+	<script type='text/javascript'>
+		window.onload = function () {
+			var el = document.getElementById('injector');
+			 el.href = makeInject('CHAT_VD', function(err,scope){
+					scope.include(scope.href + 'js/loader.js', 'js');
+			});
+		}
+	</script>
+</head>
+<body>
+	<a href="#" id='injector'>chat</chat>
+</body>
+</html>

@@ -7,7 +7,7 @@
 		window.onload = function () {
 			var el = document.getElementById('injector');
 			 el.href = makeInject('CHAT_VD', function(err,scope){
-					scope.include(scope.href + 'js/loader.js', 'js');
+					scope.includeJS('/js/loader.js');
 			});
 		}
 	</script>

@@ -41,11 +41,11 @@
 	
 	
 	//include chat
-	scope.include(scope.href + 'js/chat/js/chat.js', 'js', function (err) {
+	scope.includeJS('/chat/js/chat.js', function (err) {
 		if (err) {
-			scope.error(err);
+			console.error(err);
 		} else {
-			scope.log('All file chat load');
+			console.log('All file chat load');
 			//we can create chat;
 			global.chat = new Chat(setting);
 				

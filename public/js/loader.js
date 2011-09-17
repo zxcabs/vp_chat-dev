@@ -8,7 +8,7 @@
 		, setting = {
 			  defaultChannel: global.chat_channel
 			, channelList: global.chat_channels_keys
-			, pollFreq: 5000
+			, pollFreq: 1500
 			, retryFreq: 20000
 			, scrollEnabled: global.chat_scroll_enabled
 			, SEC_KEY: global.LIVESTREET_SECURITY_KEY

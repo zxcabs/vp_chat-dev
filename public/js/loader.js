@@ -8,8 +8,10 @@
 		, setting = {
 			  defaultChannel: global.chat_channel
 			, channelList: global.chat_channels_keys
-			, pollFreq: global.chat_poll_freq
+			, pollFreq: 5000
+			, retryFreq: 20000
 			, scrollEnabled: global.chat_scroll_enabled
+			, SEC_KEY: global.LIVESTREET_SECURITY_KEY
 		}
 		;
 	
@@ -48,7 +50,7 @@
 			console.log('All file chat load');
 			//we can create chat;
 			global.chat = new Chat(setting);
-				
+			
 			//binding chat method to old function
 			global.chat_toggle = chat.activateChannel.bind(chat);
 			global.SendClick = chat.sendClick.bind(chat);
